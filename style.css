@@ -93,7 +93,7 @@ nav a:hover {
 }
 
 main {
-    height: 72%;
+    height: 24%;
     margin-left: 30%;
     margin-right: 25%;
     background-color: transparent;
@@ -123,7 +123,10 @@ footer{
 
 h2 {
     color: white;
-    margin-left: 10px;
+    /*margin-left: 10px;
+    margin-top: 20px;*/
+    margin: 10px 20px;
+    font-size: 25px;
 
 }
 
@@ -141,13 +144,26 @@ h2 {
     background-color: rgba(0, 255, 255, 0.253);
 }
 
+.contato--img{
+    animation: slidey 2s;
+}
+
+@keyframes slidey {
+    from{
+        transform: translateX(120px)
+    }
+    to{
+        transform: translateX(0px)
+    }
+}
+
 nav > div > a {
     margin: auto;
 }
 
 .email {
     color: white;
-    font-size: 23px;
+    font-size: 21px;
     margin-left: 10px;
 }
 
@@ -156,6 +172,14 @@ nav > div > a {
 }
 .email--msn {
     border-radius: 5px;
+}
+
+.email--button{
+    width: 70px;
+    height: 25px;
+    font-weight: bold;
+    border: none;
+    box-shadow: 5px;
 }
 
 /* CSS - Galeria */
@@ -191,4 +215,51 @@ nav > div > a {
     transform: scale(1.2);
     transition-duration: 1s;
 }
+
+/* CSS - Curso */
+
+.conteiner--txt{
+    width: 85%;
+    background-color: rgba(211, 211, 211, 0.534);
+    align-items: center;
+    display: flex;
+    margin: auto;
+    border-radius: 5px;
+
+}
+.paragrafo--txt{
+    font-size: 21px;
+    margin-left: 5px;
+    line-height: 2em;
+    color: white;
+    
+}
+
+.curso--link{
+    text-decoration: none;
+}
+
+.curso--link:hover{
+    color:red;
+}
+
+.container--img-atelier{
+    background-color: rgba(211, 211, 211, 0.534);
+    width: 43%;
+    margin: auto;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+.curso--img{
+    
+    margin: auto;
+    align-items: center;
+    margin-left: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    
+}
+
 
