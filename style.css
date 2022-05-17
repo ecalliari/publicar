@@ -20,13 +20,17 @@ body {
 
 header{
     background-image: linear-gradient(to right, #4d6759, #e40329, #fe7826, #a755a0 );
-    width: 100%;
+    width: 900px;
     height: 120px;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    margin-bottom: 3px;
+
+    margin-top: 20px;
     display: flex;
     padding: 8px;
+    align-items: center;
+    text-align: center;
+    border-radius: 5px;
+    margin: auto;
+    
     
 }
 
@@ -57,6 +61,8 @@ header{
 
 .divlink{
     width: auto;
+    margin-left: 40px;
+    
     
     
 }
@@ -92,14 +98,17 @@ nav a:hover {
     text-decoration: underline;
 }
 
-main {
+.main-index {
     height: 24%;
     margin-left: 30%;
     margin-right: 25%;
-    background-color: transparent;
+    background-color: rgba(128, 128, 128, 0.733);
     color: white;
     font-weight: bold;
     line-height: 1.5em;
+    padding: 14px;
+    border-radius: 5px;
+    margin-bottom: 15px;
     
     
 }
@@ -108,6 +117,13 @@ main > h2 {
     text-decoration: underline;
     font-size: 30px;
     margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.txt-p{
+    font-size: 20px;
+    text-align: justify;
+    margin-top: 20px;
 }
 
 footer{
@@ -216,17 +232,45 @@ nav > div > a {
     transition-duration: 1s;
 }
 
+
+.navigation-auto div{
+    border: 2px solid #20a6ff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.navigation-auto{
+    position: absolute;
+    width: 800px;
+    margin-top: 360px;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+
 /* CSS - Curso */
 
 .conteiner--txt{
-    width: 85%;
+    width: 900px;
     background-color: rgba(211, 211, 211, 0.534);
     align-items: center;
     display: flex;
     margin: auto;
     border-radius: 5px;
+    padding: 15px 15px;
 
 }
+
+.title-curso{
+    margin-left: 40px;
+}
+
+
 .paragrafo--txt{
     font-size: 21px;
     margin-left: 5px;
@@ -260,6 +304,25 @@ nav > div > a {
     margin-bottom: 10px;
 
     
+}
+
+div.video {
+    background-color: var(--cor5);
+    margin: 0px -20px 30px;
+    padding: 20px;
+    padding-bottom: 50%;
+    position: relative;
+    width: 400px;
+    margin: auto;
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+
 }
 
 
